@@ -1,0 +1,90 @@
+.admin-dashboard {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .adtypes {
+        >div {
+            margin-bottom: 15px;
+        }
+        >div:last-child {
+            margin-bottom: 0px;
+        }
+
+        .price {
+            width: 100%;
+            text-align: right;
+
+            >div {
+                margin-left: auto;
+            }
+        }
+
+        .description {
+            margin-top: 12px !important;
+            font-weight: 300 !important;
+            margin-left: 12px;
+            font-size: 17px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .promos {
+
+        .promo-type {
+            width: 100%;
+
+            >div {
+                margin-left: auto;
+            }
+        }
+
+        .promo-name {
+            margin-bottom: 12px;
+        }
+
+        .payload {
+            background-color: $grey;
+            padding: 10px;
+            font-family: monospace;
+            line-height: 16px;
+            font-size: 12px;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        >div {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .admin-dashboard {
+        .adtypes {
+            >div {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .admin-dashboard {
+        grid-template-columns: 1fr;
+        grid-row-gap: 35px;
+    }
+}

@@ -1,0 +1,17 @@
+
+.layout {
+    background-color: $secondarywhite;
+    min-height: 100vh;
+
+    .content {
+        padding: 20px;
+        width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
+

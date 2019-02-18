@@ -1,0 +1,15 @@
+
+.authLayout {
+    background-color: $dirtywhite;
+    color: $white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .authLayout {
+        background-color: $white;
+    }
+}

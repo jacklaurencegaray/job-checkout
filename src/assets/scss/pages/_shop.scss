@@ -1,0 +1,144 @@
+.shop {
+
+    h1 {
+        font-weight: 600;
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .shop-select {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+        grid-auto-rows: 1fr;
+
+        .card {
+            padding: 30px 30px 100px 30px;
+            position: relative;
+            transition: 350ms;
+
+            * {
+                transition: 0ms !important;
+            }
+
+            input[type='number'] {
+                transition: 300ms !important;
+            }
+
+            h2 {
+                font-size: 30px;
+                font-weight: 500;
+                margin-bottom: 12px;
+            }
+            p {
+                font-weight: 300;
+                line-height: 30px;
+            }
+
+            .price {
+                text-align: right;
+                margin-bottom: 12px;
+
+                div {
+                    margin-left: auto;
+                }
+            }
+
+            input[type='number'] {
+                width: 50px;
+                float: right;
+                position: absolute;
+                bottom: 25px;
+                border-radius: 9999px;
+
+                &::-webkit-inner-spin-button, &::-webkit-outer-spin-button  {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .bottom-content {
+        text-align: right;
+        margin-bottom: 30px;
+
+        .total {
+            padding: 10px 0;
+            margin-top: 25px;
+            text-align: right;
+    
+            h3 {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 25px;
+            }
+    
+            h2 {
+                font-size: 40px;
+                font-weight: 600;
+                line-height: 40px;
+            }
+        }
+    
+        .place-order-button {
+            border: 2px solid $teal;
+            color: $teal;
+            background-color: transparent;
+            font-size: 19px;
+            padding: 15px 0px 15px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            width: 135px;
+            transition: 250ms all; 
+
+            &:hover {
+                background-color: $teal;
+                color: $white;
+                width: 150px;
+
+                &::after {
+                    content: '>';
+                    margin-left: 8px;
+                }
+            }
+
+            &:active, &:focus {
+                outline: none;
+            }
+
+            &.disabled {
+                opacity: .5;
+                cursor: not-allowed;
+                &:hover {
+                    width: 135px;
+                    color: $teal;
+                    background-color: initial;   
+                }
+                &::after {
+                    content: '';
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .shop {
+        .shop-select {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .shop {
+        .shop-select {
+            grid-template-columns: 1fr;
+        }
+    }
+}

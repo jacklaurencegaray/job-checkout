@@ -1,0 +1,16 @@
+
+.card {
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px !important;
+    padding: 25px;
+    border-radius: 6px;
+
+    &.selected {
+        color: $white;
+        background-color: $teal;
+    }
+
+    &.selectable {
+        cursor: pointer;
+    }
+}
