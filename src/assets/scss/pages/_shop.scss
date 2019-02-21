@@ -83,8 +83,8 @@
         }
     
         .place-order-button {
-            border: 2px solid $teal;
-            color: $teal;
+            border: 2px solid $blue;
+            color: $blue;
             background-color: transparent;
             font-size: 19px;
             padding: 15px 0px 15px 15px;
@@ -95,7 +95,7 @@
             transition: 250ms all; 
 
             &:hover {
-                background-color: $teal;
+                background-color: $blue;
                 color: $white;
                 width: 150px;
 
@@ -114,7 +114,7 @@
                 cursor: not-allowed;
                 &:hover {
                     width: 135px;
-                    color: $teal;
+                    color: $blue;
                     background-color: initial;   
                 }
                 &::after {
