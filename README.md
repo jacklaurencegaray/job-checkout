@@ -25,13 +25,13 @@ React, MobX, propTypes, Webpack, SASS, Babel (ES6)
 
 In terms of file structure, the following are directories under `/src`, the directory containing all source files:
 
-/assets - contains all scss and svg's used in the app.
-/components - intended for re-usable components.
-/data - contains all prepopulated data.
-/helpers - contains all CRUD helpers for the populated data (equivalent to a database backend except non-persistent); it also contains other helper functions.
-/layout - contains all layout within the app that is used to wrap Pages
-/pages - contains all pages the router refers to whenever a specific URL is visited
-/stores - contains all mobX stores: primarily AccountStore, AdStore, CartStore, and most importantly - the RootStore, the global store containing all other subscribable stores with in the application.
+/assets - contains all scss and svg's used in the app.<br />
+/components - intended for re-usable components.<br />
+/data - contains all prepopulated data.<br />
+/helpers - contains all CRUD helpers for the populated data (equivalent to a database backend except non-persistent); it also contains other helper functions.<br />
+/layout - contains all layout within the app that is used to wrap Pages<br />
+/pages - contains all pages the router refers to whenever a specific URL is visited<br />
+/stores - contains all mobX stores: primarily AccountStore, AdStore, CartStore, and most importantly - the RootStore, the global store containing all other subscribable stores with in the application.<br />
 
 For the preferred /asset file structure architecture I've used in this application: https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization
 
@@ -46,3 +46,9 @@ The application tries to emulate a synthetic authentication system by asking one
 Username is an identification for each company. Within the /data directory, promos.js identifies wether a company is being offered a promo primarily by their username. This is not case sensitive. Ford and ford means the same in this application and both will still be eligible for the same promotion.
 
 To login as an administrator, use the same login system AND use 'admin' as the username. The app will redirect you to the admin dashboard.
+
+## Design Choices
+
+UI is heavily inspired by the AirBnb's design principles. <br />
+Redux is not used because of heavy boilerplate code and the time it takes to set up the stores, actions, reducers, and all other ceremonies with it. MobX is used instead for simplicity.<br />
+SASS over CSS-in-JS - the choice of SASS is by personal preferrence. <br />
