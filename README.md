@@ -47,6 +47,8 @@ Username is an identification for each company. Within the /data directory, prom
 
 To login as an administrator, use the same login system AND use 'admin' as the username. The app will redirect you to the admin dashboard.
 
+*To add new ad types and promos, please refer to the /data directory and add new objects in there. Wrong object format will break the app. I didn't extensively focus on this as I believe this is merely back-end specific.*
+
 ## Design Choices
 
 UI is heavily inspired by the AirBnb's design principles. <br />

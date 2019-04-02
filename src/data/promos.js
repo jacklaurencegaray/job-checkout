@@ -1,4 +1,10 @@
 
+/**
+ * 
+ * Please read /helpers/pricing for some ideas about the promos.
+ * All fields with in the payload for every promo_type is required.
+ */
+
 export default [
     {
         promo_type: 'x_for_y',
