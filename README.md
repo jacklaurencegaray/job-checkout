@@ -54,3 +54,4 @@ To login as an administrator, use the same login system AND use 'admin' as the u
 UI is heavily inspired by the AirBnb's design principles. <br />
 Redux is not used because of heavy boilerplate code and the time it takes to set up the stores, actions, reducers, and all other ceremonies with it. MobX is used instead for simplicity.<br />
 SASS over CSS-in-JS - the choice of SASS is by personal preferrence. <br />
+CSS Grid for grids and to aid mobile responsiveness.
