@@ -25,13 +25,13 @@ React, MobX, propTypes, Webpack, SASS, Babel (ES6)
 
 In terms of file structure, the following are directories under `/src`, the directory containing all source files:
 
-/assets - contains all scss and svg's used in the app.<br />
-/components - intended for re-usable components.<br />
-/data - contains all prepopulated data.<br />
-/helpers - contains all CRUD helpers for the populated data (equivalent to a database backend except non-persistent); it also contains other helper functions.<br />
-/layout - contains all layout within the app that is used to wrap Pages<br />
-/pages - contains all pages the router refers to whenever a specific URL is visited<br />
-/stores - contains all mobX stores: primarily AccountStore, AdStore, CartStore, and most importantly - the RootStore, the global store containing all other subscribable stores with in the application.<br />
+`/assets` - contains all scss and svg's used in the app.<br />
+`/components` - intended for re-usable components.<br />
+`/data` - contains all prepopulated data.<br />
+`/helpers` - contains all CRUD helpers for the populated data (equivalent to a database backend except non-persistent); it also contains` other helper functions.<br />
+`/layout` - contains all layout within the app that is used to wrap Pages<br />
+`/pages` - contains all pages the router refers to whenever a specific URL is visited<br />
+`/stores` - contains all mobX stores: primarily AccountStore, AdStore, CartStore, and most importantly - the RootStore, the global store containing all other subscribable stores with in the application.<br />
 
 For the preferred /asset file structure architecture I've used in this application: https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization
 
